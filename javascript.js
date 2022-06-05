@@ -2,6 +2,8 @@ let scorePlayer = 0;
 let scoreComp = 0;
 let round = 0;
 function game(){
+    round ++;
+    console.log(`раунд`+` `+round);
 //Выбор рандомного значения
 let posibleOptions = [`rock`,`paper`,`scissors`];
 function random(options){
@@ -38,11 +40,12 @@ if(selectPlayer === `scissors`){
         scoreComp++;
         console.log(`ты проиграл`);}
     else {console.log(`ничья`)}  }
-    round ++;
-    console.log(scorePlayer,scoreComp, `раунд`+` `+round);
+    console.log(scorePlayer,scoreComp) 
+    
 }
 //Чтоб игра повторялась
 for (scorePlayer; scorePlayer<5; ){
+    
     game();
     if (scoreComp ==5) break;    
 }
