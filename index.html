@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KMN</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<script src="javascript.js"></script>
+
+<div class="round">Раунд:</div>
+
+
+    <div class="user">
+        <h3>Твой выбор</h3>
+        <div class="userSelect">
+            <div class="userBut"><button id="rock"><img src="picture/rock.jpg"></div></button>
+            <div class="userBut"><button id="scissors"><img src="picture/scissors.jpg"></div></button>
+            <div class="userBut"><button id="paper"><img src="picture/paper.jpg"></div></button> 
+        </div>
+    </div>
+    <div class="game">
+        
+        <div class="userItem">
+            <div class="userItemText"><h3>Ты выбрал</h3></div>
+            <div class="userItemSelect"></div>
+        </div>
+        <div class="vs">vs</div>
+        <div class="pkItem">
+            <div class="pkItemText"><h3>Выбор компьютера</h3></div>
+            <div class="pkItemSelect"></div>
+        </div>
+    </div>
+    <div class="result"></div>
+    <div class="score">Счет
+        <div class="inp"><div id="scoreInp1"></div>:<div id="scoreInp2"></div> </div></div>
+    <div class="nextRound"><button id="but">Следуюший Раунд</button></div>
+    <div id="winPlayer1"><div id="winPlayer">
+        <h2>Скайнет повержен
+        </h2>
+        <button id="new">Играть заново</button></div></div>
+
+        <div id="winComp1"><div id="winComp">
+            <h2>Скайнет взял вверх</h2>
+            <button id="new1">Играть заново</button></div></div>    
+
 <body>
-    
+    <script src="js.js"></script>
 </body>
+
 </html>
